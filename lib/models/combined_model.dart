@@ -16,7 +16,7 @@ class CombinedModel {
         this.color,
         this.icon,
         this.comment = '',
-        this.amount,
+        this.amount = 0.0,
     });
 
     int? id;
@@ -28,7 +28,7 @@ class CombinedModel {
     String? color;
     String? icon;
     String comment;
-    double? amount;
+    double amount;
 
     factory CombinedModel.fromJson(Map<String, dynamic> json) => CombinedModel(
         id: json["id"],

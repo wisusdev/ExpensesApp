@@ -1,8 +1,12 @@
+import 'package:exp_app/models/combined_model.dart';
 import 'package:exp_app/utils/constans.dart';
 import 'package:flutter/material.dart';
 
 class ButtonSheetKeyboard extends StatefulWidget {
-    const ButtonSheetKeyboard({Key? key}) : super(key: key);
+
+    final CombinedModel cModel;
+
+    const ButtonSheetKeyboard({Key? key, required this.cModel}) : super(key: key);
 
     @override
     State<ButtonSheetKeyboard> createState() => _ButtonSheetKeyboardState();
@@ -11,6 +15,12 @@ class ButtonSheetKeyboard extends StatefulWidget {
 class _ButtonSheetKeyboardState extends State<ButtonSheetKeyboard> {
 
     String import = '0.00';
+
+    @override
+    void initState() {
+        import = widget.cModel.amount.toStringAsFixed(2);
+        super.initState();
+    }
 
     @override
     Widget build(BuildContext context) {
@@ -42,12 +52,18 @@ class _ButtonSheetKeyboardState extends State<ButtonSheetKeyboard> {
 
         if(import == '0.00') import = '';
 
+        _expenseChange(String amount){
+            if(amount == '') amount = '0.00';
+            widget.cModel.amount = double.parse(amount);
+        }
+
         _num(String text, double height){
             return GestureDetector(
                 behavior: HitTestBehavior.opaque,
                 onTap: () {
                     setState(() {
                         import += text;
+                        widget.cModel.amount = double.parse(import);
                     });
                 },
                 child: SizedBox(
@@ -113,8 +129,9 @@ class _ButtonSheetKeyboardState extends State<ButtonSheetKeyboard> {
                                                         behavior: HitTestBehavior.opaque,
                                                         onTap: (){
                                                             setState(() {
-                                                                if(import.length > 0.00){
+                                                                if(import.length > 0.0){
                                                                     import = import.substring(0, import.length -1 );
+                                                                    _expenseChange(import);
                                                                 }
                                                             });
                                                         },
@@ -139,6 +156,7 @@ class _ButtonSheetKeyboardState extends State<ButtonSheetKeyboard> {
                                                     onTap: () {
                                                         setState(() {
                                                             import = '0.00';
+                                                            _expenseChange(import);
                                                             Navigator.pop(context);
                                                         });
                                                     },
@@ -150,6 +168,7 @@ class _ButtonSheetKeyboardState extends State<ButtonSheetKeyboard> {
                                                     onTap: () {
                                                         setState(() {
                                                             if (import.length == 0.0) import = '0.00';
+                                                            _expenseChange(import);
                                                             Navigator.pop(context);
                                                         });
                                                     },

@@ -24,7 +24,7 @@ class AddExpenses extends StatelessWidget {
                 ),
                 body: Column(
                     children: [
-                        const ButtonSheetKeyboard(),
+                        ButtonSheetKeyboard(cModel: combinedModel,),
             
                         Expanded(
                             child: Container(
@@ -43,7 +43,7 @@ class AddExpenses extends StatelessWidget {
                                             child: Center(
                                                 child: GestureDetector(
                                                     onTap: (){
-                                                        print(combinedModel.comment);
+                                                        print(combinedModel.amount);
                                                     },
                                                     child: const Text('Agregar gasto')
                                                 )
