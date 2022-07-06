@@ -9,9 +9,9 @@ class CombinedModel {
     CombinedModel({
         this.id,
         this.link,
-        this.year,
-        this.month,
-        this.day,
+        this.year = 0,
+        this.month = 0,
+        this.day = 0,
         this.category,
         this.color,
         this.icon,
@@ -21,9 +21,9 @@ class CombinedModel {
 
     int? id;
     int? link;
-    int? year;
-    int? month;
-    int? day;
+    int year;
+    int month;
+    int day;
     String? category;
     String? color;
     String? icon;
