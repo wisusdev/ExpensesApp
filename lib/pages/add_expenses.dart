@@ -1,5 +1,6 @@
 import 'package:exp_app/models/combined_model.dart';
 import 'package:exp_app/utils/constans.dart';
+import 'package:exp_app/widgets/add_expenses_wg/button_sheet_category.dart';
 import 'package:exp_app/widgets/add_expenses_wg/button_sheet_keyboard.dart';
 import 'package:exp_app/widgets/add_expenses_wg/comments_box.dart';
 import 'package:exp_app/widgets/add_expenses_wg/date_picker.dart';
@@ -32,8 +33,7 @@ class AddExpenses extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                     DatePicker(cModel: combinedModel),
-                                    const Text('Categorìa'),
-                                    const Text('Detalle'),
+                                    ButtonSheetCategory(cModel: combinedModel),
                                     CommentBox(cModel: combinedModel,),
                                     Expanded(
                                         child: Center(

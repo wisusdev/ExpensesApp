@@ -28,6 +28,7 @@ class _DatePickerState extends State<DatePicker> {
 
     @override
     Widget build(BuildContext context) {
+
         DateTime date = DateTime.now();
 
         var widgets = <Widget>[];
@@ -38,7 +39,7 @@ class _DatePickerState extends State<DatePicker> {
                 locale: const Locale('es', 'ES'),
                 initialDate: date.subtract(const Duration(hours: 24 * 2)), 
                 firstDate: date.subtract(const Duration(hours: 24 * 30)), 
-                lastDate: date.subtract(const Duration(hours: 24 * 2))
+                lastDate: date.add(const Duration(hours: 24 * 30)),
             ).then((value){
                 setState(() {
                     if (value != null) {
