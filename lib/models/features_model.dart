@@ -5,14 +5,15 @@ FeaturesModel featuresModelFromJson(String str) => FeaturesModel.fromJson(json.d
 String featuresModelToJson(FeaturesModel data) => json.encode(data.toJson());
 
 class FeaturesModel {
+    
     FeaturesModel({
-        this.id = 0,
+        this.id,
         this.category = "",
         this.color = "",
         this.icon = "",
     });
 
-    int id;
+    int? id;
     String category;
     String color;
     String icon;
