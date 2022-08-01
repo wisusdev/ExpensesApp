@@ -7,6 +7,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(
+    // Cargamos nuestro provider en lo mas alto de nuestra app
     MultiProvider(
         providers: [
             ChangeNotifierProvider(create: (context) => UIProvider())
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
     Widget build(BuildContext context) {
         return MaterialApp(
             title: 'Material App',
+            // 
             localizationsDelegates: const [
                 GlobalMaterialLocalizations.delegate
             ],
