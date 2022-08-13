@@ -1,7 +1,7 @@
-import 'package:exp_app/pages/add_entries.dart';
-import 'package:exp_app/pages/add_expenses.dart';
-import 'package:exp_app/pages/home_page.dart';
-import 'package:exp_app/providers/ui_provider.dart';
+import 'package:expenses_app/pages/add_entries.dart';
+import 'package:expenses_app/pages/add_expenses.dart';
+import 'package:expenses_app/pages/home_page.dart';
+import 'package:expenses_app/providers/ui_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';

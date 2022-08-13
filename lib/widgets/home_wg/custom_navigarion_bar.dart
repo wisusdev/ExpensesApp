@@ -1,4 +1,4 @@
-import 'package:exp_app/providers/ui_provider.dart';
+import 'package:expenses_app/providers/ui_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

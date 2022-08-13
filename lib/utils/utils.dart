@@ -1,4 +1,4 @@
-import 'package:exp_app/utils/icon_list.dart';
+import 'package:expenses_app/utils/icon_list.dart';
 import 'package:flutter/material.dart';
 
 extension ColorCategory on String {

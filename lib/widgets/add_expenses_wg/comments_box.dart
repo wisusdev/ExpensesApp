@@ -1,4 +1,4 @@
-import 'package:exp_app/models/combined_model.dart';
+import 'package:expenses_app/models/combined_model.dart';
 import 'package:flutter/material.dart';
 
 class CommentBox extends StatelessWidget {

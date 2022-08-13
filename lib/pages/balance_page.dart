@@ -1,7 +1,7 @@
 import 'dart:math';
-import 'package:exp_app/widgets/balance_wg/back_sheet.dart';
-import 'package:exp_app/widgets/balance_wg/custom_floating_action_button.dart';
-import 'package:exp_app/widgets/balance_wg/front_sheet.dart';
+import 'package:expenses_app/widgets/balance_wg/back_sheet.dart';
+import 'package:expenses_app/widgets/balance_wg/custom_floating_action_button.dart';
+import 'package:expenses_app/widgets/balance_wg/front_sheet.dart';
 import 'package:flutter/material.dart';
 
 class BalancePage extends StatefulWidget {

@@ -1,8 +1,8 @@
-import 'package:exp_app/pages/balance_page.dart';
-import 'package:exp_app/pages/chats_page.dart';
+import 'package:expenses_app/pages/balance_page.dart';
+import 'package:expenses_app/pages/chats_page.dart';
 import 'package:flutter/material.dart';
 
-import 'package:exp_app/providers/ui_provider.dart';
+import 'package:expenses_app/providers/ui_provider.dart';
 import 'package:provider/provider.dart';
 import '../widgets/home_wg/custom_navigarion_bar.dart';
 

@@ -1,6 +1,6 @@
-import 'package:exp_app/models/combined_model.dart';
-import 'package:exp_app/utils/utils.dart';
-import 'package:exp_app/widgets/add_expenses_wg/category_list.dart';
+import 'package:expenses_app/models/combined_model.dart';
+import 'package:expenses_app/utils/utils.dart';
+import 'package:expenses_app/widgets/add_expenses_wg/category_list.dart';
 import 'package:flutter/material.dart';
 
 

@@ -1,4 +1,4 @@
-import 'package:exp_app/models/features_model.dart';
+import 'package:expenses_app/models/features_model.dart';
 
 class CategoryList {
     var catList = [

@@ -1,4 +1,4 @@
-import 'package:exp_app/utils/constans.dart';
+import 'package:expenses_app/utils/constans.dart';
 import 'package:flutter/material.dart';
 
 class FrontSheet extends StatelessWidget {
